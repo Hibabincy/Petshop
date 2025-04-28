@@ -1,0 +1,38 @@
+<!-- {{form}}
+<button>Register</button> -->
+
+
+
+<!-- css kodukkunna casel -->
+
+<style>
+    button{
+        border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #196ab1;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    }
+</style>
+ <form method="POST">
+    {% csrf_token %}
+
+    {{form.fnm}}
+    <br>
+    {{form.mob}}
+    <br>
+    {{form.eml}}
+    <br>
+    {{form.psw}}
+    <br>
+    {{form.cpsw}}
+    <br>
+    <br>
+    <button>Register</button>
+ </form>
+ <h2 style="color: green;text-align: center;">{{success}}</h2>

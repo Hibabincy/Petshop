@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../html"
+		},
+		{
+			"path": "../../../../../../React"
+		},
+		{
+			"path": "../../../../../../Python"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Desktop/Library"
+		},
+		{
+			"path": "../../../../Desktop/School"
+		},
+		{
+			"path": "../../../../Desktop/Forest"
+		},
+		{
+			"path": "../../../../Desktop/hibathira"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html"
+	}
+}

@@ -1,0 +1,39 @@
+
+<!-- <a href="users">Users</a>
+<a href="allpets">All Pets</a> -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+</head>
+<body style="background-color: rgb(248, 247, 200);">
+             
+    
+    <nav>
+        
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="users">Users</a></li>
+            <li><a href="allpets">All pets</a></li>
+            <li><a href="viewcart">My cart</a></li>
+            <li><a href="mailing">Mail</a></li>
+            <li><a href="formview">Form</a></li>
+            
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    
+<div >
+    <img src="{% static 'images/welcome.webp'%}" style="width: 100%;height: 100%;"> 
+  
+           
+</div>
+  
+
+</body>
+</html>

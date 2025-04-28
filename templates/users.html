@@ -1,0 +1,41 @@
+{% load static %}
+<link rel="stylesheet" href="{% static '/css/table.css'%}"/>
+<script src="{% static 'js/table.js'%}"></script>
+<body style="background-color: rgb(169, 166, 190);">
+<table class="eael-data-table">
+    <thead >
+        <tr >
+            
+            <th >Username</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Password</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <!-- <th> </th> -->
+        </tr>
+    </thead>
+    <tbody>
+        {% for m in data %}
+        <!-- <tr><td class="heading-tage">{{m.fnm}}</td><td>&nbsp;{{m.eml}}</td><td>&nbsp;{{m.mob}}</td><td>&nbsp;{{m.psw}}</td></tr>
+        <tr>
+            +.<td>{{m.eml}}</td><td>{{m.eml}}</td><td>{{m.mob}}</td><td>{{m.psw}}</td></tr> -->
+    <tr>
+        <!-- <td class="hi" id="n"></td> -->
+        <td class="hi">{{m.fnm}}</td>
+        <td class="hi">&nbsp;{{m.eml}}</td>
+        <td class="hi">&nbsp;{{m.mob}}</td>
+        <td class="hi">&nbsp;{{m.psw}}</td>
+        <td class="hi"><button><a href="{% url 'edit' m.id %}">Edit</a></button></td>
+        <td class="hi"><button><a href="{% url 'delete' m.id %}">Delete</a></button></td>
+     
+    </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+<!-- <script>
+for(i=1;i<=100;i++){
+        document.querySelector('#n').textContent=i;
+    }
+</script> -->
